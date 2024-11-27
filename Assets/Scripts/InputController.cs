@@ -24,6 +24,8 @@ public class InputController : MonoBehaviour
     [SerializeField] private Transform bulletSpawn;
     private Coroutine shootRoutine;
     [SerializeField] private GameObject bullet;
+    [SerializeField] private float bulletSpeed = 2f;
+    private bool canShoot = true;
     [SerializeField] private float rateOfFire = 0.1f;
     [SerializeField] private float dashCD = 1f;
     private bool canDash = true;
@@ -75,7 +77,8 @@ public class InputController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        cam = Camera.main;
+        cam = GetComponentInChildren<Camera>();
+        cam.enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -135,14 +138,12 @@ public class InputController : MonoBehaviour
     private void OnShoot(InputValue input)
     {
         if (input.isPressed)
-            shootRoutine = StartCoroutine(Shoot());
-        else
-            StopCoroutine(shootRoutine);
+            Shoot();
     }
 
-    private IEnumerator Shoot()
+    private void Shoot()
     {
-        while (true)
+        if (canShoot)
         {
             Ray dir = cam.ScreenPointToRay(new Vector2((cam.pixelWidth - 1f) / 2f, (cam.pixelHeight - 1f) / 2f));
 
@@ -153,8 +154,9 @@ public class InputController : MonoBehaviour
                 bulletSpawn.LookAt(dir.GetPoint(500f));
 
             GameObject newBullet = Instantiate(bullet, bulletSpawn.position, Quaternion.identity);
-            newBullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * moveSpeed * speedMod * 2f, ForceMode.Impulse);
-            yield return new WaitForSeconds(rateOfFire);
+            newBullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * bulletSpeed, ForceMode.Impulse);
+
+            StartCoroutine(ShootCD());
         }
     }
 
@@ -163,5 +165,12 @@ public class InputController : MonoBehaviour
         canDash = false;
         yield return new WaitForSeconds(dashCD);
         canDash = true;
+    }
+
+    private IEnumerator ShootCD()
+    {
+        canShoot = false;
+        yield return new WaitForSeconds(rateOfFire);
+        canShoot = true;
     }
 }

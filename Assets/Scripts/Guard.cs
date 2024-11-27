@@ -5,18 +5,24 @@ using UnityEngine;
 public class Guard : MonoBehaviour
 {
     [SerializeField] private List<Transform> patrolPoints = new List<Transform>();
-    [SerializeField] private float speed = 0;
+    [SerializeField] private float speed = 10;
     [SerializeField] private float minDist = 0.5f;
+    [SerializeField] private float distractDuration = 3f;
+    [SerializeField] private float distractLongReset = 10;
 
     private int index = 0;
-    private Rigidbody2D body;
+    private int indexDir = 1;
+    private Rigidbody body;
+    private bool distracted = false;
+    private Coroutine distractRoutine;
+    private Coroutine distractLongRoutine;
 
     private void Awake()
     {
-        body = gameObject.GetComponent<Rigidbody2D>();
-        
-        if(patrolPoints.Count > 0)
-            body.linearVelocity = (patrolPoints[index].position - transform.position).normalized * speed;
+        if (patrolPoints.Count == 0)
+            patrolPoints.Add(transform);
+
+        body = gameObject.GetComponent<Rigidbody>();
     }
 
     private void FixedUpdate()
@@ -26,14 +32,68 @@ public class Guard : MonoBehaviour
 
     private void Move()
     {
-        Vector3 dist = patrolPoints[index].position - transform.position;
+        Vector3 dist = new Vector3(patrolPoints[index].position.x, 0, patrolPoints[index].position.z) - new Vector3(transform.position.x, 0, transform.position.z);
+
+
+        body.linearVelocity = dist.normalized * speed;
+        body.rotation = Quaternion.FromToRotation(body.rotation.eulerAngles, dist);
 
         if (dist.magnitude > minDist)
             return;
-        else if (++index >= patrolPoints.Count)
-            index = 0;
 
-        dist = patrolPoints[index].position - transform.position;
-        body.linearVelocity = dist.normalized * speed;
+        if (dist.magnitude <= minDist && distracted)
+        {
+            body.linearVelocity = Vector3.zero;
+
+            if (distractRoutine == null)
+                distractRoutine = StartCoroutine(Distracted());
+
+            return;
+        }
+
+        if (((index += 1 * indexDir) >= patrolPoints.Count))
+        {
+            index = patrolPoints.Count - 1;
+            indexDir *= -1;
+        }
+        else if (index < 0)
+        {
+            index = 0;
+            indexDir *= -1;
+        }
+    }
+
+    public void Distract(Vector3 point)
+    {
+        if (!distracted)
+        {
+            GameObject go = new GameObject();
+            go.transform.position = point;
+            patrolPoints.Insert(++index, go.transform);
+            distracted = true;
+            distractLongRoutine = StartCoroutine(DistractFailSafe());
+        }
+    }
+
+    private IEnumerator Distracted()
+    {
+        yield return new WaitForSeconds(distractDuration);
+        StopDistracted();
+    }
+
+    private IEnumerator DistractFailSafe()
+    {
+        yield return new WaitForSeconds(distractLongReset);
+        if (distractRoutine != null)
+            StopDistracted();
+    }
+
+    private void StopDistracted()
+    {
+        distracted = false;
+        patrolPoints.RemoveAt(index);
+        index--;
+        StopCoroutine(distractRoutine);
+        StopCoroutine(distractLongRoutine);
     }
 }

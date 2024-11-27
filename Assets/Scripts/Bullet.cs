@@ -10,7 +10,6 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
             return;
 
-        Debug.Log(collision.contactCount);
         foreach(Guard each in Physics.OverlapSphere(collision.GetContact(0).point, distractionRange).Select(each => each.GetComponent<Guard>()).Where(each => each != null))
             each.Distract(collision.GetContact(0).point);
         Destroy(gameObject);

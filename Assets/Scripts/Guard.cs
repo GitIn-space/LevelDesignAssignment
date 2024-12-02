@@ -20,7 +20,11 @@ public class Guard : MonoBehaviour
     private void Awake()
     {
         if (patrolPoints.Count == 0)
-            patrolPoints.Add(transform);
+        {
+            GameObject go = new GameObject();
+            go.transform.position = transform.position + transform.forward;
+            patrolPoints.Add(go.transform);
+        }
 
         body = gameObject.GetComponent<Rigidbody>();
     }

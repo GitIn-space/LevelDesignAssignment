@@ -263,8 +263,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolPoints: []
   speed: 10
-  minDist: 0.5
+  minDist: 2
   distractDuration: 3
+  distractLongReset: 10
 --- !u!1 &1798831165362971966
 GameObject:
   m_ObjectHideFlags: 0

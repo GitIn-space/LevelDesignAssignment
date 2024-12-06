@@ -22,7 +22,7 @@ public class Guard : MonoBehaviour
         if (patrolPoints.Count == 0)
         {
             GameObject go = new GameObject();
-            go.transform.position = transform.position + transform.forward;
+            go.transform.position = transform.position;
             patrolPoints.Add(go.transform);
         }
 
@@ -37,6 +37,9 @@ public class Guard : MonoBehaviour
     private void Move()
     {
         Vector3 dist = new Vector3(patrolPoints[index].position.x, 0, patrolPoints[index].position.z) - new Vector3(transform.position.x, 0, transform.position.z);
+
+        if (dist.magnitude < minDist && patrolPoints.Count <= 1)
+            return;
 
         transform.rotation = Quaternion.LookRotation(dist, Vector3.up);
         body.linearVelocity = dist.normalized * speed;
@@ -54,7 +57,7 @@ public class Guard : MonoBehaviour
             return;
         }
 
-        if (((index += 1 * indexDir) >= patrolPoints.Count))
+        if (((index += indexDir) >= patrolPoints.Count))
         {
             index = patrolPoints.Count - 1;
             indexDir *= -1;

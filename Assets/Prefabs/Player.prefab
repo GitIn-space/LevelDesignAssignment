@@ -530,7 +530,7 @@ MonoBehaviour:
   dashForce: 20
   rotSpeedX: 1
   rotSpeedY: 1
-  jumpForce: 1
+  jumpForce: 3
   gravityForce: 1
   terminalVelocity: 50
   verticalMass: 1

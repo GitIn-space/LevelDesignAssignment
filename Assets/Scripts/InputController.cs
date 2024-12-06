@@ -36,7 +36,7 @@ public class InputController : MonoBehaviour
     {
         Vector3 environmentalForce;
         Vector3 verticalForce = new Vector3(0f, rb.linearVelocity.y);
-        rb.linearVelocity -= verticalForce;
+        //rb.linearVelocity -= verticalForce;
 
         if (IsGrounded())
             moveForce = moveSpeed * speedMod * (transform.right * moveInput.x + transform.forward * moveInput.z);

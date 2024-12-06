@@ -14,8 +14,8 @@ public class InputController : MonoBehaviour
     private Vector2 rotInput;
     [SerializeField] private float rotSpeedX = 1f;
     [SerializeField] private float rotSpeedY = 1f;
-    [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private float gravityForce = 1f;
+    /*[SerializeField]*/ private float jumpForce = 10f;
+    /*[SerializeField]*/ private float gravityForce = 9f;
     [SerializeField] private float terminalVelocity = 50f;
     [SerializeField] private float verticalMass = 1f;
     [SerializeField] private GameObject groundCheck;

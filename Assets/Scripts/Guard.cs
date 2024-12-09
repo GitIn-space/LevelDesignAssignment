@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Guard : MonoBehaviour
@@ -9,6 +10,9 @@ public class Guard : MonoBehaviour
     [SerializeField] private float minDist = 0.5f;
     [SerializeField] private float distractDuration = 3f;
     [SerializeField] private float distractLongReset = 10;
+    [SerializeField] private Transform player;
+    [SerializeField] private float detectDistance;
+    [SerializeField] private float gravityForce = 1f;
 
     private int index = 0;
     private int indexDir = 1;
@@ -16,6 +20,7 @@ public class Guard : MonoBehaviour
     private bool distracted = false;
     private Coroutine distractRoutine;
     private Coroutine distractLongRoutine;
+    private bool detected = false;
 
     private void Awake()
     {
@@ -32,6 +37,9 @@ public class Guard : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
+
+        if (Vector3.Distance(transform.position, player.position) < detectDistance)
+            ;
     }
 
     private void Move()
@@ -46,6 +54,13 @@ public class Guard : MonoBehaviour
 
         if (dist.magnitude > minDist)
             return;
+
+        if (dist.magnitude <= detectDistance && detected)
+        {
+            body.linearVelocity = Vector3.zero;
+
+            return;
+        }
 
         if (dist.magnitude <= minDist && distracted)
         {
@@ -69,9 +84,14 @@ public class Guard : MonoBehaviour
         }
     }
 
+    private void Gravity()
+    {
+        body.linearVelocity -= new Vector3(0, gravityForce) * body.mass * Time.fixedDeltaTime;
+    }
+
     public void Distract(Vector3 point)
     {
-        if (!distracted)
+        if (!distracted && !detected)
         {
             GameObject go = new GameObject();
             go.transform.position = point;
@@ -101,5 +121,11 @@ public class Guard : MonoBehaviour
         index--;
         StopCoroutine(distractRoutine);
         StopCoroutine(distractLongRoutine);
+    }
+
+    public void Detect(Transform subject)
+    {
+        patrolPoints.Insert(++index, subject);
+        detected = true;
     }
 }

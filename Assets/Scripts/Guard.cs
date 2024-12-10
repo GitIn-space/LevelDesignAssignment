@@ -39,7 +39,7 @@ public class Guard : MonoBehaviour
 
         if (Vector3.Distance(transform.position, InputController.Player.position) < detectDistance)
             if(!detected)
-                detected = true;
+                Detect(InputController.Player);
     }
 
     private void Move()

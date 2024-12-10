@@ -271,8 +271,8 @@ MonoBehaviour:
   minDist: 2
   distractDuration: 3
   distractLongReset: 10
-  player: {fileID: 835229598962432130, guid: 275acc2c2f71e7147891a557ed0dedce, type: 3}
-  detectDistance: 5
+  detectDistance: 2.5
+  gravityForce: 1
 --- !u!1 &1798831165362971966
 GameObject:
   m_ObjectHideFlags: 0

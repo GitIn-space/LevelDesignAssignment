@@ -7,6 +7,7 @@ public class QuestManager : MonoBehaviour
 {
     public enum Quests
     {
+        Default,
         VillagePerson1,
         VillagePerson2,
     }
@@ -22,6 +23,9 @@ public class QuestManager : MonoBehaviour
     {
         get
         {
+            if(instance == null)
+                instance = new QuestManager();
+
             return instance;
         }
     }
@@ -29,7 +33,7 @@ public class QuestManager : MonoBehaviour
     public void AddQuest(Quests quest)
     {
         questList.Add(Instantiate(questFab, transform).GetComponent<TextMeshProUGUI>());
-        questLoc.Add(quest, questLoc.Count);
+        questLoc.Add(quest, questList.Count);
         questList.Last().transform.position += new Vector3(0, -questList.Last().rectTransform.rect.height * (questList.Count - 1));
         questList.Last().text = questTexts[quest];
     }
@@ -47,14 +51,10 @@ public class QuestManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
-        else
-            Destroy(this.gameObject);
-
         AddQuestTexts();
         AddQuest(Quests.VillagePerson1);
         AddQuest(Quests.VillagePerson2);
+        FinishQuest(Quests.VillagePerson1);
     }
 
     private void AddQuestTexts()

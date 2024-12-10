@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 1499357759138085223}
   - component: {fileID: 7649177054004985433}
   - component: {fileID: 786700439206893146}
+  - component: {fileID: 5752720698238812331}
   m_Layer: 0
   m_Name: Arm
   m_TagString: Player
@@ -255,6 +256,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5752720698238812331
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2561766242770123076}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4841362009402378602
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,7 +464,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9135207595445090179}
   serializedVersion: 4
-  m_Mass: 2
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -503,15 +525,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b1afd372cfadc043910fb327a544107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
+  moveSpeed: 10
   drag: 10
   dashForce: 20
   rotSpeedX: 1
   rotSpeedY: 1
-  jumpForce: 10
-  gravityForce: 9
+  jumpForce: 1
+  gravityForce: 1
   terminalVelocity: 50
-  verticalMass: 2.5
+  verticalMass: 1
   groundCheck: {fileID: 4841362009402378602}
   checkLength: 1
   armPivot: {fileID: 5709080724863436788}

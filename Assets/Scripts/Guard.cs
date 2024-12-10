@@ -10,7 +10,6 @@ public class Guard : MonoBehaviour
     [SerializeField] private float minDist = 0.5f;
     [SerializeField] private float distractDuration = 3f;
     [SerializeField] private float distractLongReset = 10;
-    [SerializeField] private Transform player;
     [SerializeField] private float detectDistance;
     [SerializeField] private float gravityForce = 1f;
 
@@ -38,8 +37,9 @@ public class Guard : MonoBehaviour
     {
         Move();
 
-        if (Vector3.Distance(transform.position, player.position) < detectDistance)
-            ;
+        if (Vector3.Distance(transform.position, InputController.Player.position) < detectDistance)
+            if(!detected)
+                detected = true;
     }
 
     private void Move()

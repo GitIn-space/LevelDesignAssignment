@@ -32,6 +32,15 @@ public class InputController : MonoBehaviour
 
     private Rigidbody rb;
 
+    private static Transform player;
+    public static Transform Player
+    {
+        get
+        {
+            return player;
+        }
+    }
+
     private void FixedUpdate()
     {
         Vector3 environmentalForce;
@@ -81,6 +90,11 @@ public class InputController : MonoBehaviour
         cam.enabled = true;
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        if (player == null)
+            player = transform;
+        else
+            Destroy(gameObject);
     }
 
     private void OnMove(InputValue input)

@@ -12,6 +12,7 @@ public class Cone : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Player"))
-            guardComp.Detect(other.transform);
+            if(Physics.Raycast(transform.position, Vector3.Normalize(other.transform.position - transform.position), LayerMask.GetMask("Player")))
+                guardComp.Detect(other.transform);
     }
 }

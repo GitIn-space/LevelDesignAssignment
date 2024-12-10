@@ -14,8 +14,8 @@ public class InputController : MonoBehaviour
     private Vector2 rotInput;
     [SerializeField] private float rotSpeedX = 1f;
     [SerializeField] private float rotSpeedY = 1f;
-    [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private float gravityForce = 1f;
+    /*[SerializeField]*/ private float jumpForce = 10f;
+    /*[SerializeField]*/ private float gravityForce = 9f;
     [SerializeField] private float terminalVelocity = 50f;
     [SerializeField] private float verticalMass = 1f;
     [SerializeField] private GameObject groundCheck;
@@ -36,7 +36,7 @@ public class InputController : MonoBehaviour
     {
         Vector3 environmentalForce;
         Vector3 verticalForce = new Vector3(0f, rb.linearVelocity.y);
-        rb.linearVelocity -= verticalForce;
+        //rb.linearVelocity -= verticalForce;
 
         if (IsGrounded())
             moveForce = moveSpeed * speedMod * (transform.right * moveInput.x + transform.forward * moveInput.z);

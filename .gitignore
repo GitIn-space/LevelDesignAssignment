@@ -568,7 +568,131 @@ ProjectSettings/Packages/com.unity.probuilder/Settings.json
 Assets/Models/Moon/Moon_n.jpg.meta
 ProjectSettings/Packages/com.unity.probuilder/Settings.json
 ProjectSettings/Packages/com.unity.probuilder/Settings.json
+<<<<<<< Updated upstream
 >>>>>>> 0332a78fb53d1f817937dfda0e456024cedf1246
+=======
+Assets/BenPrefab/Imports/Japanese room decor set.fbx
+Assets/BenPrefab/Imports/Japanese room decor set.fbx.meta
+Assets/BenPrefab/Imports/Textures/Room Set.meta
+Assets/BenPrefab/Imports/Textures/Room Set/Materials.meta
+Assets/BenPrefab/Imports/Textures/Room Set/Materials/Wall 1.mat
+Assets/BenPrefab/Imports/Textures/Room Set/Materials/Wall 1.mat.meta
+Assets/BenPrefab/Imports/Textures/Room Set/Materials/Wall.mat
+Assets/BenPrefab/Imports/Textures/Room Set/Materials/Wall.mat.meta
+Assets/BenPrefab/Imports/Textures/Room Set/picture_frame_BC.jpeg
+Assets/BenPrefab/Imports/Textures/Room Set/picture_frame_BC.jpeg.meta
+Assets/BenPrefab/Imports/Textures/Room Set/shoji_screen_BC.jpeg
+Assets/BenPrefab/Imports/Textures/Room Set/shoji_screen_BC.jpeg.meta
+Assets/BenPrefab/Imports/Textures/Room Set/tatami_mat_BC.jpeg
+Assets/BenPrefab/Imports/Textures/Room Set/tatami_mat_BC.jpeg.meta
+Assets/BenPrefab/Imports/Textures/Room Set/tea_set_BC.jpeg
+Assets/BenPrefab/Imports/Textures/Room Set/tea_set_BC.jpeg.meta
+Assets/BenPrefab/Imports/Textures/Room Set/tea_set_tray_BC.jpeg
+Assets/BenPrefab/Imports/Textures/Room Set/tea_set_tray_BC.jpeg.meta
+Assets/BenPrefab/Imports/Textures/Room Set/vase_01_BC.jpeg
+Assets/BenPrefab/Imports/Textures/Room Set/vase_01_BC.jpeg.meta
+Assets/BenPrefab/Imports/Textures/Room Set/vase_02_BC.jpeg
+Assets/BenPrefab/Imports/Textures/Room Set/vase_02_BC.jpeg.meta
+Assets/BenPrefab/Imports/Textures/Room Set/zabuton_cushion_BC.jpeg
+Assets/BenPrefab/Imports/Textures/Room Set/zabuton_cushion_BC.jpeg.meta
+Assets/BenPrefab/Imports/Textures/Room Set/zataku_table_BC.jpeg
+Assets/BenPrefab/Imports/Textures/Room Set/zataku_table_BC.jpeg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_AO.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_AO.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_BaseColor.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_BaseColor.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Bump.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Bump.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Cavity.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Cavity.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Displacement.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Displacement.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Gloss.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Gloss.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Normal.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Normal.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Roughness.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Roughness.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Specular.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 1/Japanese_Tatami_Mats_uehhaijew_2K_Specular.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_AO.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_AO.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_BaseColor.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_BaseColor.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Bump.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Bump.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Cavity.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Cavity.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Displacement.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Displacement.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Gloss.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Gloss.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Normal.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Normal.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Roughness.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Roughness.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Specular.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Japanese_Tatami_Mats_tlvkcgen_2K_Specular.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Tatami 2.mat
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Tatami 2/Tatami 2.mat.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_AO.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_AO.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_BaseColor.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_BaseColor.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Bump.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Bump.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Cavity.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Cavity.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Displacement.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Displacement.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Gloss.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Gloss.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Normal.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Normal.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Roughness.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Roughness.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Specular.jpg
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Traditional_Japanese_Wooden_Facade_tl0leelfw_2K_Specular.jpg.meta
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Wood.mat
+Assets/BenPrefab/Imports/Textures/Walls and building blocks/Wood/Wood.mat.meta
+Assets/BenPrefab/Imports/Textures/Wood Box.meta
+Assets/BenPrefab/Imports/Textures/Wood Box/Woodbox.mat
+Assets/BenPrefab/Imports/Textures/Wood Box/Woodbox.mat.meta
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_AO.jpg
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_AO.jpg.meta
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_BaseColor.jpg
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_BaseColor.jpg.meta
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_Cavity.jpg
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_Cavity.jpg.meta
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_Gloss.jpg
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_Gloss.jpg.meta
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_Normal.jpg
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_Normal.jpg.meta
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_Roughness.jpg
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_Roughness.jpg.meta
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_Specular.jpg
+Assets/BenPrefab/Imports/Textures/Wood Box/Wooden_Box_ubgmdjzhw_Raw_4K_Specular.jpg.meta
+Assets/BenPrefab/Imports/Wooden_Box_ubgmdjzhw_Raw.fbx
+Assets/BenPrefab/Imports/Wooden_Box_ubgmdjzhw_Raw.fbx.meta
+Assets/BenPrefab/Map Prefabs/Japanese room decor set.prefab
+Assets/BenPrefab/Map Prefabs/Japanese room decor set.prefab.meta
+Assets/BenPrefab/Map Prefabs/Lamp.prefab
+Assets/BenPrefab/Map Prefabs/Target Teleport.prefab
+Assets/BenPrefab/Map Prefabs/Target Teleport.prefab.meta
+Assets/BenPrefab/Map Prefabs/Wooden_Box_ubgmdjzhw_Raw.prefab
+Assets/BenPrefab/Map Prefabs/Wooden_Box_ubgmdjzhw_Raw.prefab.meta
+Assets/BenPrefab/Scripts/Key.cs
+Assets/BenPrefab/Scripts/Teleporter.cs
+Assets/BenPrefab/Scripts/Teleporter.cs.meta
+Assets/BenPrefab/Sounds/key-get-39925.mp3
+Assets/BenPrefab/Sounds/key-get-39925.mp3.meta
+Assets/Colours/Cone.mat
+Assets/Colours/Hostile.mat
+Assets/Materials/Red.mat
+>>>>>>> Stashed changes
 Assets/Shrine Pack.meta
 Assets/Shrine Pack/Materials.meta
 Assets/Shrine Pack/Materials/M_Fusa.mat
@@ -2382,6 +2506,7 @@ Assets/UnhyeongungCollect/Textures/T_WoodenTray336_R.png
 Assets/UnhyeongungCollect/Textures/T_WoodenTray336_R.png.meta
 Assets/UnhyeongungCollect/Textures/T_WoodenTray336_S.png
 Assets/UnhyeongungCollect/Textures/T_WoodenTray336_S.png.meta
+<<<<<<< Updated upstream
 Assets/BenPrefab/Map Prefabs/Wooden_Box_ubgmdjzhw_Raw.prefab.meta
 Assets/BenPrefab/Map Prefabs/Wooden_Box_ubgmdjzhw_Raw.prefab
 Assets/BenPrefab/Map Prefabs/Target Teleport.prefab.meta
@@ -2494,3 +2619,5 @@ Assets/BenPrefab/Imports/Textures/Room Set/Materials.meta
 Assets/BenPrefab/Imports/Textures/Room Set.meta
 Assets/BenPrefab/Imports/Japanese room decor set.fbx.meta
 Assets/BenPrefab/Imports/Japanese room decor set.fbx
+=======
+>>>>>>> Stashed changes

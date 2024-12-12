@@ -7,6 +7,7 @@ public class Door : MonoBehaviour
     public Key Key;
 
     [SerializeField] AudioSource AudioSource;
+    [SerializeField] GameObject canvas;
  
     private void OnCollisionEnter(Collision collision)
     {
@@ -14,6 +15,8 @@ public class Door : MonoBehaviour
         {
             gameObject.SetActive(false);
             AudioSource.Play();
+            canvas.SetActive(false);
+            
         }
     }
 }

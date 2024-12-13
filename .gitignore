@@ -2639,3 +2639,17 @@ Assets/Models/Throne/textures/Throne_material_normal.png
 Assets/Models/Throne/textures/Throne_material_normal.png.meta
 ProjectSettings/Packages/com.unity.probuilder/Settings.json
 ProjectSettings/Packages/com.unity.progrids/Settings.json
+Assets/BenPrefab/Bens Test.unity
+Assets/BenPrefab/Map Prefabs/Guard Ben Varriant.prefab
+Assets/BenPrefab/Map Prefabs/Guard Ben Varriant.prefab.meta
+Assets/BenPrefab/Scripts/Canvas Enabler.cs
+Assets/BenPrefab/Scripts/Canvas Enabler.cs.meta
+Assets/BenPrefab/Scripts/Playerlose.cs
+Assets/BenPrefab/Scripts/Teleporter.cs
+Assets/BenPrefab/Sounds/loud-thunder-192165.mp3
+Assets/BenPrefab/Sounds/loud-thunder-192165.mp3.meta
+Assets/BenPrefab/Sounds/steps-on-wooden-stairs-90107.mp3
+Assets/BenPrefab/Sounds/steps-on-wooden-stairs-90107.mp3.meta
+Assets/BenPrefab/Sounds/water-dripping-on-wateraif-14581.mp3
+Assets/BenPrefab/Sounds/water-dripping-on-wateraif-14581.mp3.meta
+Assets/Prefabs/Guard.prefab

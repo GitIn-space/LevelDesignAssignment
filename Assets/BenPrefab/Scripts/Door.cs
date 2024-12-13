@@ -8,15 +8,22 @@ public class Door : MonoBehaviour
 
     [SerializeField] AudioSource AudioSource;
     [SerializeField] GameObject canvas;
+    [SerializeField] GameObject door;
  
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
+        canvas.SetActive(true);
         if (Key.isUnlocked == true)
         {
-            gameObject.SetActive(false);
+            door.SetActive(false);
             AudioSource.Play();
-            canvas.SetActive(false);
-            
+           
         }
     }
+
+    private void OnTriggerExit(Collider other) 
+    {
+        canvas.SetActive(false);
+    }
+   
 }

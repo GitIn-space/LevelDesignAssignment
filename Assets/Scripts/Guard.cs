@@ -12,6 +12,8 @@ public class Guard : MonoBehaviour
     [SerializeField] private float distractLongReset = 10;
     [SerializeField] private float detectDistance;
     [SerializeField] private float gravityForce = 1f;
+    [SerializeField] private GameObject Canvas;
+    [SerializeField] private GameObject spawnPoint;
 
     private int index = 0;
     private int indexDir = 1;
@@ -40,6 +42,11 @@ public class Guard : MonoBehaviour
         if (Vector3.Distance(transform.position, InputController.Player.position) < detectDistance)
             if(!detected)
                 Detect(InputController.Player);
+        else
+            {
+                InputController.Player.transform.position = spawnPoint.transform.position;
+                Canvas.SetActive(true);
+            }
     }
 
     private void Move()

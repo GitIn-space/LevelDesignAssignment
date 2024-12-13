@@ -8,9 +8,6 @@ public class GetKey : MonoBehaviour
         Canvas.SetActive(true);
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        Canvas.SetActive(false);
-    }
+  
 
 }

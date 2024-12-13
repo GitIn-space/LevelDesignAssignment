@@ -2956,6 +2956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Japanese room decor set (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7492507082045071192, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3423
@@ -7874,7 +7878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -176.43, y: -243.6}
+  m_AnchoredPosition: {x: -165, y: -164}
   m_SizeDelta: {x: 447.1484, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &298375857
@@ -9404,6 +9408,14 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
+      propertyPath: Canvas
+      value: 
+      objectReference: {fileID: 1678037206}
+    - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1352252689}
+    - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -10000,6 +10012,14 @@ PrefabInstance:
       propertyPath: speed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
+      propertyPath: Canvas
+      value: 
+      objectReference: {fileID: 1678037206}
+    - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1352252689}
     - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 14
@@ -13548,7 +13568,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 41d6a3e21a8311c45bc7f0f7691c523d, type: 3}
   m_Resource: {fileID: 8300000, guid: 41d6a3e21a8311c45bc7f0f7691c523d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.922
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -15948,6 +15968,7 @@ GameObject:
   - component: {fileID: 615580415}
   - component: {fileID: 615580414}
   - component: {fileID: 615580413}
+  - component: {fileID: 615580417}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -16038,6 +16059,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &615580417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615580412}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a0e2c9c053bbb4ba9be04be014bcb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 615580412}
 --- !u!1001 &618179545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16814,11 +16848,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1247327788}
+    m_TransformParent: {fileID: 1135308588}
     m_Modifications:
     - target: {fileID: 7492507082045071192, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_Name
       value: Japanese room decor set (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492507082045071192, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalScale.x
@@ -16834,11 +16872,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2299976
+      value: -3.2299984
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.344658
+      value: 9.344662
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18756,15 +18794,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 835229598962432130, guid: 275acc2c2f71e7147891a557ed0dedce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -32.2
+      value: -32.61
       objectReference: {fileID: 0}
     - target: {fileID: 835229598962432130, guid: 275acc2c2f71e7147891a557ed0dedce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.96
+      value: 6.52
       objectReference: {fileID: 0}
     - target: {fileID: 835229598962432130, guid: 275acc2c2f71e7147891a557ed0dedce, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 132.84
+      value: 130.92
       objectReference: {fileID: 0}
     - target: {fileID: 835229598962432130, guid: 275acc2c2f71e7147891a557ed0dedce, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19261,6 +19299,14 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
+      propertyPath: Canvas
+      value: 
+      objectReference: {fileID: 1678037206}
+    - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1352252689}
+    - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -19412,7 +19458,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508701613}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c98eb637be8cc214c829bbe0d1a1025f, type: 3}
   m_Name: 
@@ -23038,6 +23084,14 @@ PrefabInstance:
       propertyPath: speed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
+      propertyPath: Canvas
+      value: 
+      objectReference: {fileID: 1678037206}
+    - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1352252689}
     - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 11
@@ -30169,7 +30223,7 @@ Transform:
   m_GameObject: {fileID: 1106596270}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.09, y: 0, z: -3.089}
+  m_LocalPosition: {x: 19.555, y: 0, z: -4.303}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30604,7 +30658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -36.01391
+      value: -39.68
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30612,7 +30666,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.129639
+      value: 11.61
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30787,6 +30841,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117048798}
   m_Mesh: {fileID: -2124705421725058983, guid: fdcecf12ec75f6c47b5fc281aac86638, type: 3}
+--- !u!1 &1135308587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1135308588}
+  m_Layer: 0
+  m_Name: Door object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1135308588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135308587}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1040632367446755990}
+  - {fileID: 680197612}
+  m_Father: {fileID: 1247327788}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1138298967
 GameObject:
   m_ObjectHideFlags: 0
@@ -35111,6 +35198,7 @@ MonoBehaviour:
   Key: {fileID: 1498698209}
   AudioSource: {fileID: 1619074178}
   canvas: {fileID: 615580412}
+  door: {fileID: 1135308587}
 --- !u!4 &1247327788
 Transform:
   m_ObjectHideFlags: 0
@@ -35124,8 +35212,7 @@ Transform:
   m_LocalScale: {x: 1.0636462, y: 1.0636462, z: 1.0636462}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1040632367446755990}
-  - {fileID: 680197612}
+  - {fileID: 1135308588}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1247327789
@@ -35143,12 +35230,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.658749, y: 9.310694, z: 1.8963039}
-  m_Center: {x: 0.64107853, y: 1.653573, z: 7.617769}
+  m_Size: {x: 6.658749, y: 9.310694, z: 3.5327442}
+  m_Center: {x: 0.6410785, y: 1.653573, z: 6.7995486}
 --- !u!114 &1247327790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39150,7 +39237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342520100}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c98eb637be8cc214c829bbe0d1a1025f, type: 3}
   m_Name: 
@@ -41883,6 +41970,10 @@ PrefabInstance:
     - target: {fileID: 7492507082045071192, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_Name
       value: Japanese room decor set
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492507082045071192, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalScale.x
@@ -44916,7 +45007,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -36.01391
+      value: -39.68
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.y
@@ -44924,7 +45015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.509628
+      value: 10.98999
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalRotation.w
@@ -51298,6 +51389,14 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
+      propertyPath: Canvas
+      value: 
+      objectReference: {fileID: 1678037206}
+    - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1352252689}
+    - target: {fileID: 3313850079720693752, guid: 7d16e069cf0566c43a548a6cb10fc6a9, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 12
       objectReference: {fileID: 0}
@@ -51457,7 +51556,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859724246}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c98eb637be8cc214c829bbe0d1a1025f, type: 3}
   m_Name: 
@@ -51982,7 +52081,7 @@ GameObject:
   - component: {fileID: 1678037207}
   - component: {fileID: 1678037211}
   m_Layer: 5
-  m_Name: Canvas (2)
+  m_Name: Lose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52111,7 +52210,7 @@ Transform:
   m_GameObject: {fileID: 1680343715}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.14, y: 0, z: 8.311}
+  m_LocalPosition: {x: 8.45, y: 0, z: 6.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55066,7 +55165,7 @@ Transform:
   m_GameObject: {fileID: 1797702947}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.271, y: 0, z: -7.755}
+  m_LocalPosition: {x: 19.569, y: 0, z: -9.519}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -55328,7 +55427,7 @@ Transform:
   m_GameObject: {fileID: 1811542859}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.564, y: 0, z: 21.75}
+  m_LocalPosition: {x: -3.12, y: 0, z: 21.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56181,7 +56280,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1849456446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c98eb637be8cc214c829bbe0d1a1025f, type: 3}
   m_Name: 
@@ -64357,7 +64456,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059804958}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c98eb637be8cc214c829bbe0d1a1025f, type: 3}
   m_Name: 
@@ -67724,11 +67823,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1247327788}
+    m_TransformParent: {fileID: 1135308588}
     m_Modifications:
     - target: {fileID: 7492507082045071192, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_Name
       value: Japanese room decor set
+      objectReference: {fileID: 0}
+    - target: {fileID: 7492507082045071192, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalScale.x
@@ -67740,15 +67843,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6388417
+      value: 0.63884157
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.2299976
+      value: -3.2299984
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.4010005
+      value: 7.4010015
       objectReference: {fileID: 0}
     - target: {fileID: 7832159780500489698, guid: e4a08df49637ed74f9d0d078dde26f23, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67955,6 +68058,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1396988529}
     - target: {fileID: 4792956809820056192, guid: 1c88fbedc81ef1d458c968a306d61e31, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4792956809820056192, guid: 1c88fbedc81ef1d458c968a306d61e31, type: 3}
       propertyPath: spawnpoint
       value: 
       objectReference: {fileID: 1352252689}
@@ -67962,6 +68069,14 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 1678037206}
+    - target: {fileID: 5523319648334928049, guid: 1c88fbedc81ef1d458c968a306d61e31, type: 3}
+      propertyPath: Canvas
+      value: 
+      objectReference: {fileID: 1678037206}
+    - target: {fileID: 5523319648334928049, guid: 1c88fbedc81ef1d458c968a306d61e31, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 1352252689}
     - target: {fileID: 5523319648334928049, guid: 1c88fbedc81ef1d458c968a306d61e31, type: 3}
       propertyPath: 'patrolPoints.Array.data[0]'
       value: 
@@ -67998,7 +68113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guard
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8986890246602992566, guid: 1c88fbedc81ef1d458c968a306d61e31, type: 3}
+    - {fileID: 483527158776547636, guid: 1c88fbedc81ef1d458c968a306d61e31, type: 3}
+    - {fileID: 4792956809820056192, guid: 1c88fbedc81ef1d458c968a306d61e31, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

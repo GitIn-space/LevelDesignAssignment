@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2369204842552002428}
   - component: {fileID: 992795329598227845}
   - component: {fileID: 3732840558278778583}
+  - component: {fileID: 8471733821570700691}
   m_Layer: 0
   m_Name: Japanese_Mossy_Boulder_veqhehl_Mid
   m_TagString: Untagged
@@ -86,3 +87,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8471733821570700691
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6139830959155346735}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4942040955462087420, guid: 745c732c0fb194b449da741916641c9a, type: 3}

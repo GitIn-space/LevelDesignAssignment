@@ -79,7 +79,7 @@ public class Guard : MonoBehaviour
             return;
         }
 
-        if (((index += indexDir) >= patrolPoints.Count))
+        if ((index += indexDir) >= patrolPoints.Count)
         {
             index = patrolPoints.Count - 1;
             indexDir *= -1;

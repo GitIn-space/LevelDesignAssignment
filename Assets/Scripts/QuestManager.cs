@@ -59,7 +59,7 @@ public class QuestManager : MonoBehaviour
 
     private void AddQuestTexts()
     {
-        questTexts.Add(Quests.VillagePerson1, "Talk with Guy");
-        questTexts.Add(Quests.VillagePerson2, "Talk with Duda");
+        questTexts.Add(Quests.VillagePerson1, "Talk with Person 1");
+        questTexts.Add(Quests.VillagePerson2, "Talk with Person 2");
     }
 }

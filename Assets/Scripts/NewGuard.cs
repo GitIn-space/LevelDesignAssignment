@@ -113,7 +113,7 @@ public class NewGuard : MonoBehaviour
             go.transform.position = point;
             patrolPoints.Insert(++index, go.transform);
             distracted = true;
-            distractLongRoutine = StartCoroutine(DistractFailSafe());
+            distractLongRoutine = StartCoroutine(Distracted());
         }
     }
 

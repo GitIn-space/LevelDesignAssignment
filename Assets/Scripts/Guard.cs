@@ -44,11 +44,11 @@ public class Guard : MonoBehaviour
         if (Vector3.Distance(transform.position, InputController.Player.position) < detectDistance)
             if(!detected)
                 Detect(InputController.Player);
-        /*else
+        else
             {
                 InputController.Player.transform.position = spawnPoint.transform.position;
                 Canvas.SetActive(true);
-            }*/
+            }
     }
 
     private void Move()

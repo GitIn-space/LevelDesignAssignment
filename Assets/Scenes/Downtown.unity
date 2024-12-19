@@ -349,6 +349,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Downtown
       objectReference: {fileID: 0}
+    - target: {fileID: 9167453254892324071, guid: cbbce16b6d45e33498197ab2599165c9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

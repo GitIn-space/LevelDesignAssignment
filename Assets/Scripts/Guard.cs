@@ -39,6 +39,8 @@ public class Guard : MonoBehaviour
     {
         Move();
 
+        Gravity();
+
         if (Vector3.Distance(transform.position, InputController.Player.position) < detectDistance)
             if(!detected)
                 Detect(InputController.Player);
@@ -57,7 +59,7 @@ public class Guard : MonoBehaviour
             return;
 
         transform.rotation = Quaternion.LookRotation(dist, Vector3.up);
-        body.linearVelocity = dist.normalized * speed;
+        body.linearVelocity = dist.normalized * speed + new Vector3(0, body.linearVelocity.y);
 
         if (dist.magnitude > minDist)
             return;
